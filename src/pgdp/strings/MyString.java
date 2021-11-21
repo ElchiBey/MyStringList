@@ -43,16 +43,16 @@ public class MyString {
         }
 
         char[] str2 = new char[other.length()];
-        MyString newElement2 = new MyString(other.data);
+        MyString newElement2 = other;
         int x=0;
         while(newElement2!=null) {
-            while (x < newElement2.length()) {
+            while (x < other.length()) {
                 for (int j = 0; j < newElement2.data.length; j++) {
                     str2[x] = newElement2.data[j];
                     x++;
                 }
+                newElement2 = newElement2.next;
             }
-            newElement2 = newElement2.next;
         }
         int s=0;
         for (int j = 0; j < length(); j++){
