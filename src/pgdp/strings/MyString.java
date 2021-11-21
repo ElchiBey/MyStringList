@@ -114,4 +114,20 @@ public class MyString {
         }
         return new String(str);
     }
+
+    public char[] getData() {
+        return data;
+    }
+
+    public void setData(char[] data) {
+        this.data = data;
+    }
+
+    public MyString getNext() {
+        return next;
+    }
+
+    public void setNext(MyString next) {
+        this.next = next;
+    }
 }
